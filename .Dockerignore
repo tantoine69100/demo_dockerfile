@@ -1,0 +1,36 @@
+# Ne pas embarquer dans l'image ce qui ne sert pas à son exécution.
+
+# Secrets et config locale
+.env
+*.env
+!.env.example
+
+# Environnements virtuels et caches Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Tests et documentation
+tests/
+docs/
+*.md
+!README.md
+
+# Git et CI
+.git/
+.gitignore
+.github/
+
+# Outils et IDE
+.vscode/
+.idea/
+*.log
+
+# Docker (inutile de se copier soi-même)
+Dockerfile
+.dockerignore
+docker-compose.yml
